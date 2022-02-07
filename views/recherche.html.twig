@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./main2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gogole</title>
+</head>
+
+<body>
+    <main>
+        <div class="choix">
+            <a class="index" href="/">INDEXER</a>
+            <a class="recherche" href="/recherche">RECHERCHER</a>
+        </div>
+        <h1>Rechercher</h1>
+        <form action="/recherche" method="post">
+            <section>
+                <label for="url">MOT</label>
+                <input type="text" name="word" placeholder="Thomas" />
+            </section>
+            <input style="background-color: green;" type="submit" value="RECHERCHER" />
+        </form>
+        <h2>Résultats</h2>
+       <div id="result" class="result">
+            <b>{{message}}</b> <!-- introduit la valeur de "message" -->
+        </div>
+    </main>
+</body>
+
+</html>
